@@ -1,0 +1,26 @@
+# ============================================================
+#  config.txt - Plantilla de configuracion del simulador
+#  Las lineas vacias y las que empiezan con '#' se ignoran.
+# ============================================================
+
+# --- Configuracion del sistema ---
+# Procesadores: entre 1 y 64
+# Hilos: entre 1 y 1024
+Procesadores 2
+Hilos 4
+
+# --- Procesos ---
+# ID | IDPadre | ProgramCounter | Registros | Tamano | Hilos | Quantum | Iteracion
+#
+#  ID             : entero > 0, unico
+#  IDPadre        : entero >= 0 (0 = proceso inicial)
+#  ProgramCounter : nombre o identificador del proceso (texto)
+#  Registros      : entero >= 0
+#  Tamano         : bytes, entero >= 0
+#  Hilos          : entero > 0
+#  Quantum        : pulsos por turno, entero > 0
+#  Iteracion      : veces que se ejecuta, entero > 0
+
+1 | 0 | Proceso1 | 5 | 1024 | 2 | 10 | 3
+2 | 1 | Proceso2 | 4 | 512  | 1 | 8  | 2
+3 | 0 | Proceso3 | 6 | 2048 | 3 | 12 | 4
